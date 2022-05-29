@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/normalize-8.0.1.css" type="text/css">
+        <link rel="stylesheet" href="../css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="icon" href="../image/index/fondo.svg">
+        <title>NOSOTROS</title>
+    </head>
+
+<body>
+        <header class="header"> 
+        
+            <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+            
+            <nav class="header__menu">
+                <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
+                <input type="checkbox" value="" id="menu_ham" class="nav_ham">
+                
+                <ul class="nav_list"> <!-- Empleo lista no ordenada para menu de navegacion, tal cual vimos en ejemplo de clases -->
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li> <a href="./nosotros.html">NOSOTROS</a></li>
+                    <li> <a href="./servicios.html"> SERVICIOS</a></li>
+                    <li> <a href="./proyectos.html"> PROYECTOS</a></li>
+                    <li> <a href="./contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header> <!-- Menu navegable de la Web E e Isologotipo -->
+
+        <main> <!-- Utilizo etiqueta semantica main para esta seccion porque es la mas importante de este archivo HTML -->
+            
+            <section class="section_slide">
+                <video src="../video/nosotros2.mp4" autoplay loop onloadstart="this.muted=true"></video> 
+            </section>  
+
+            <h1 class="title_h1">SOBRE NOSOTROS</h1>
+
+            <section class="section_nosotros">
+                <p>
+                    INGETEC es una compañía argentina que surge a partir de la iniciativa de distintos profesionales que decidieron potenciar de manera conjunta sus diversas experiencias y trayectorias laborales, en los campos de la energia solar y mercado electrico. Fuertemente convencidos de proporcionar soluciones a medida para cada cliente.
+                
+                    <br> Disponemos del apoyo directo e indirecto de proveedores y profesionales de los distintos ámbitos abarcados, conformando un equipo de trabajo multidisciplinario e íntegro, con capacidad para afrontar y ejecutar proyectos de múltiples características, en cada una de sus etapas.
+                
+                    <br> Actualmente INGETEC posee base de operaciones tecnicas y comerciales en Provincias de San Juan, Mendoza y Buenos Aires, Argentina.
+                    <br>
+                    <strong>Somos INGETEC, sabemos de Energia.</strong>
+                </p>
+                <img src="../image/nosotros/NOSOTROS.webp" alt="ingenieros_trabajando"> 
+            </section>
+        </main>
+
+            <section>
+                <h2 class="title_h2">CONOZCA NUESTRO STAFF DE PROFESIONALES</h2> <!-- Fotos provisarias de los socios y linkeo a Linkedin -->
+                
+                <div class="section_staff" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <div>
+                        <img src="../image/nosotros/miembro1.png" alt="integrante1">
+                        <a href="https://www.linkedin.com/in/juan-manuel-julian-0a2374173/"><h3>Ing. Juan Manuel JULIAN - Socio Gerente</h3></a>
+                        <p>Ingeniero Electronico especializado en Tecnologia Solar Fotovoltaica y Mercados Electricos. </p> 
+                    </div>
+                    <div>
+                        <img src="../image/nosotros/miembro2.png" alt="integrante2"> 
+                        <a href="https://www.linkedin.com/in/nahuelgutierrezbagni/"><h3>Mg. Nahuel GUTIERREZ - Socio Gerente</h3> </a>
+                        <p>Economista especializado en negocios energeticos convencionales y renovables. Analista de modelos.</p> 
+                    </div>
+                    <div>
+                        <img src="../image/nosotros/miembro3.PNG" alt="integrante3"> 
+                        <a href="https://www.linkedin.com/in/lucasestrada/"> <h3>Dr.Ing. Lucas ESTRADA - Socio Gerente.</h3></a>
+                        <p>Investigador con amplia trayectoria en desarrollo de proyectos solares fotovoltaicos a gran escala y produccion de tecnologia fotovoltaica</p> 
+                    <div>    
+                </div>
+                </section>
+
+            <footer class="footer">
+                        
+                <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+        
+                <div> 
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="../image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="../image/footer/youtube.png" alt="icono_youtube"></a></li>
+                        <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="../image//footer/instagram.png" alt="logo_instagram"></a></li>
+                        <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
+                    </ul>         
+                </div>
+
+                <div class="footer__author">
+                    <p >INGENIERIA Y TECNOLOGIA SAS</p>
+                    <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
+                </div>
+            </footer>           
+            
+            <script>
+                AOS.init();
+            </script>   
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!-- Mi proyecto final consiste en el desarrollo de un sitio Web sencillo para la pyme de ingenieria que actualmente desarrollo junto a dos socios y amigos.
+La empresa. INGETEC, proporciona servicios de Ingenieria, Consultoiria y Obra para la integracion de energia solar cualquier ambito -->
+<!-- Para este desafio Nº2, se entrega el archivo INDEX estilado segun los contenidos vistos hasta el momento -->
+
+<!DOCTYPE html>
+    <html lang="es"> <!-- Español -->
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+            <!-- Informacion de mi sitio web -->
+            <meta name="keywords" content="energia solar,ingenieria, energias renovables, energia solar fotovoltaica, energia solar termica, consultoria"/>
+            <meta name="description" content="Empresa lider de la region en el desarrollo de Proyectos de Energia Renovable"/>
+            <meta name="author" content="Ing. Juan Manuel Julian" />
+            <meta name="copyright" content="INGETEC SAN JUAN" />
+            <link rel="stylesheet" href="./css/normalize-8.0.1.css" type="text/css">
+            <link rel="stylesheet" href="./css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+            <link rel="icon" href="/image/index/fondo.svg">
+
+
+            <title>INICIO</title>
+        </head>
+        
+        <body>
+            
+            <header class="header"> 
+                <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+                <nav class="header__menu">
+                   
+                    <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
+                    <input type="checkbox" value="" id="menu_ham" class="nav_ham">
+                     
+                    <ul class="nav_list"> <!-- Empleo lista no ordenada para menu de navegacion, tal cual vimos en ejemplo de clases -->
+                        <li><a href="./index.html">INICIO</a></li>
+                        <li> <a href="./html/nosotros.html">NOSOTROS</a></li>
+                        <li> <a href="./html/servicios.html"> SERVICIOS</a></li>
+                        <li> <a href="./html/proyectos.html"> PROYECTOS</a></li>
+                        <li> <a href="./html/contacto.html"> CONTACTO</a></li>
+                    </ul>
+                </nav>
+         </header> <!-- Menu navegable de la Web E e Isologotipo -->
+
+            <!-- Empleo la etiqueta <section> para futuro slide o carrusel -->
+            <section class="section_slide">
+                    <video src="./video/legislatura.mp4" autoplay loop onloadstart="this.muted=true"></video>
+            </section>   
+            
+            <section> <!-- Seccion de nuestros Clientes -->
+                <h1 class="title_h1">NUESTROS SOCIOS COMERCIALES</h1>
+                <ul class="section_socios">
+                    <li><a href="https://www.canadiansolar.com/"> <img src="./image/index/canadian2.png" alt="logo_canadiansolar"></a></li>
+                    <li><a href="https://www.growatt.mx/"> <img src="./image/index/growatt2.png" alt="logo_growatt" ></a></li>
+                    <li><a href="https://solar.huawei.com/es/"> <img src="./image/index/huawei2.png" alt="logo_huawei"></a></li>
+                    <li><a href="https://www.trinasolar.com/es"> <img src="./image/index/trina.png" alt="logo_trina"></a></li>
+                    <li><a href="https://www.jinkosolar.com/en/site/tigerpro"> <img src="./image/index/jinko2.png" alt="logo_jinko"></a></li>
+                    <li><a href="https://www.sma-south-america.com/"> <img src="./image/index/sma2.png" alt="logo_sma"></a></li>
+                </ul>
+            </section>
+
+            <footer class="footer">
+                
+                <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+         
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="./image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="./image/footer/youtube.png" alt="icono_youtube"></a></li>
+                    <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="./image//footer/instagram.png" alt="logo_instagram"></a></li>
+                    <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="./image//footer/facebook.png" alt="logo_facebook"></a></li>
+                </ul>        
+               
+
+                <div class="footer__author">
+                    <p >INGENIERIA Y TECNOLOGIA SAS</p>
+                    <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
+                </div>
+            </footer>
+        </body>
+    </html>

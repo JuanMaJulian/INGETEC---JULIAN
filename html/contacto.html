@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../css/normalize-8.0.1.css" type="text/css">
+        <link rel="stylesheet" href="../css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="icon" href="../image/index/fondo.svg">
+
+        <title>CONTACTO</title>
+    </head>
+
+    <body>
+        <header class="header"> 
+        
+            <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+            
+            <nav class="header__menu">
+                <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
+                <input type="checkbox" value="" id="menu_ham" class="nav_ham">
+                
+                <ul class="nav_list"> <!-- Empleo lista no ordenada para menu de navegacion, tal cual vimos en ejemplo de clases -->
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li> <a href="./nosotros.html">NOSOTROS</a></li>
+                    <li> <a href="./servicios.html"> SERVICIOS</a></li>
+                    <li> <a href="./proyectos.html"> PROYECTOS</a></li>
+                    <li> <a href="./contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+         </header> <!-- Menu navegable de la Web E e Isologotipo -->
+        
+        <section>
+            <h1 class="title_h1">CONTACTENOS</h1>
+            <h2 class="title_h2">Cuentenos sobre su Proyecto</h2>
+        </section>
+        
+        <main>
+            <section class="main_contacto">
+                
+                <div class="section_contacto animate__animated animate__backInLeft">
+                    <p>Desde este espacio puede dejarnos su consulta ó sugerencia. Su contacto es muy importante para nosotros, por favor complete el formulario y nuestros asesores se contactaran con usted en breve.</p> 
+                    <ul>
+                        <li> <a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"> Telefono/Cel: +54 264-6707536 </a> </li>
+                        <li><a href="mailto:contacto@ingetec.com.ar">Email: contacto@ingetec.com.ar</a></li>
+                        <li> <a href="https://www.google.com.ar/maps/@-31.5530039,-68.5188845,71m/data=!3m1!1e3"> Oficina San Juan: Abraham Tapia 510 Sur - Capital </a> </li>
+                    </ul>
+                </div>
+                <div class="form animate__animated animate__backInRight" >
+                    <h2>Formulario de Contacto </h2>
+                    
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                        
+                        <div class="form_style">
+                            <label for="nombre"> Nombre y Apellido:</label>
+                            <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                        </div>
+                        
+                        <div class="form_style">
+                            <label for="email"> Direccion de E-mail:</label>
+                            <input type="email" id="email" placeholder="E-mail"> 
+                        </div>
+                        
+                        <div class="form_style">
+                            <label for="telefono"> Numero de Contacto:</label>
+                            <input type="tel" name="telefono" placeholder="Código de área sin ceros + Número">
+                        </div>
+                        <div class="form_style">
+                            <label for="proyecto"> Indique el tipo de proyecto por el cual nos consulta:</label>
+                            <select name="proyecto" id="proyecto">
+                                <option value="1">Residencial</option>
+                                <option value="2">Comercial</option>
+                                <option value="3">Industrial</option>
+                                <option value="4">Consultoria</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div class="form_style">
+                            <label for="mensaje"> Mensaje:</label>
+                            
+                            <textarea name="mensaje" id="mensaje" cols="50" rows="5" placeholder="Ingrese su mensaje, consulta o sugerencia..."></textarea>
+                        </div>
+                        
+                        <div class="form_style">    
+                            <label for="suscripcion">  ¿Desea suscribirse a nuestro boletin mensual con novedades del sector energetico renovable? </label>
+                            <input type="radio" name="suscripcion" value="1"> Si
+                            <input type="radio" name="suscripcion" value="0"> No
+                        </div>
+                        <div class="btn">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div class="section__mapa">
+            <h2>Lo eperamos en cualquiera de nuestras Oficinas</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1699.971958905665!2d-68.51998944180687!3d-31.55315369533968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816aa15524d0c7%3A0x99dd88e039f80837!2sFecoagro!5e0!3m2!1ses-419!2sar!4v1651416009956!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Por defecto como lo entrega maps -->
+        </div> <!-- Mapa de Oficina -->
+    
+            
+            <footer class="footer">
+                        
+            <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+
+            <div> 
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="../image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="../image/footer/youtube.png" alt="icono_youtube"></a></li>
+                    <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="../image//footer/instagram.png" alt="logo_instagram"></a></li>
+                    <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
+                </ul>         
+            </div>
+
+            <div class="footer__author">
+                <p >INGENIERIA Y TECNOLOGIA SAS</p>
+                <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/normalize-8.0.1.css" type="text/css">
+        <link rel="stylesheet" href="../css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="icon" href="../image/index/fondo.svg">
+        <title>SERVICIOS</title>
+    </head>
+
+    <body>
+
+        <header class="header"> 
+        
+            <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+            
+            <nav class="header__menu">
+                <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
+                <input type="checkbox" value="" id="menu_ham" class="nav_ham">
+                
+                <ul class="nav_list"> <!-- Empleo lista no ordenada para menu de navegacion, tal cual vimos en ejemplo de clases -->
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li> <a href="./nosotros.html">NOSOTROS</a></li>
+                    <li> <a href="./servicios.html"> SERVICIOS</a></li>
+                    <li> <a href="./proyectos.html"> PROYECTOS</a></li>
+                    <li> <a href="./contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
+         </header> <!-- Menu navegable de la Web E e Isologotipo -->
+        
+        <main>
+            <section class="section_servicios">
+                <h1 class="title_h1">NUESTROS SERVICIOS</h1>
+                <p>
+                    INGETEC desarrolla soluciones completas e integrales en proyectos de Energía Solar Fotovoltaica, en todas sus etapas de desarrollo. 
+                    
+                    A través de un equipo de trabajo multidisciplinario y con amplia experiencia en dirección de proyectos Solares fotovoltaicos. Nuestros esfuerzos se centran en la generación de proyectos de energía solar sostenible y notablemente rentables para el cliente.
+                    
+                    No solo desarrollamos los aspectos técnicos del proyecto, también brindamos estudios economicos y financieros para conocer las oportunidades y factibilidades de cada proyecto en cualquier escala.    
+                </p>
+                <div>
+                    <video src="../video/trabajando.mp4" autoplay loop onloadstart="this.muted=true"></video>
+                </div>
+            </section>   
+        </main>
+
+        <div>
+            <h2 class="title_h2">AREAS DE SERVICIO</h2> 
+        </div>
+        
+        <section> <!-- Seccion de servicios en particular -->
+            
+            <div class="section_areas" data-aos="fade-right"> 
+                <div class="section__area">   
+                    <img src="../image/servicios/generacion.svg" alt="icono1">
+                    <h3>Proyectos de Generacion</h3><p>Desarrollo integral de proyectos de Generación Solar Fotovoltaicos y Térmicos.</p>
+                </div>
+                
+                <div class="section__area"> 
+                    <img src="../image/servicios/escala.svg" alt="icono2">
+                    <h3>Sin limitaciones</h3><p>Proyectos a escala Residencial, Comercial e Industrial</p>
+                </div> 
+                
+                <div class="section__area"> 
+                    <img src="../image/servicios/diseno.svg" alt="icono3">
+                    <h3>Diseño a medida</h3><p>Diseño de Estructuras soporte para cada necesidad. Estructuras Fijas, con ajuste estacional, Trackers con seguimiento en uno o dos ejes</p>
+                </div>
+            </div>
+            
+            <div class="section_areas" data-aos="fade-left"> 
+             
+                <div class="section__area">    <!-- Con bloque div "encapsulo" de a tres iconos por bloque o fila -->
+                    <img src="../image/servicios/seguimiento.svg" alt="icono10">
+                    <h3>Operacion y Manteniemiento</h3><p>Contratos de operacion y mantenimiento. Estudios, ensayos y mediciones</p>
+                </div>
+                
+                <div class="section__area"> 
+                    <img src="../image/servicios/ingenieria.svg" alt="icono8">
+                    <h3>Confeccion de Proyectos Ejecutivos</h3><p>Ingenieria Basica e Ingenieria de Detalle para cada proyecto.</p>
+                </div>
+                
+                <div class="section__area"> 
+                    <img src="../image/servicios/obra.svg" alt="icono9">
+                    <h3>Obras</h3><p>Equipo tecnico para supervision, inspeccion y construccion de obras en cualquier escala</p>
+                </div>
+            </div>
+            
+            <div class="section_areas" data-aos="fade-right"> 
+                <div class="section__area">    <!-- Con bloque div "encapsulo" de a tres iconos por bloque o fila -->
+                    <img src="../image/servicios/modelado.png" alt="icono7">
+                    <h3>Modelado y Simulacion</h3><p>Analisis de Prefactibilidad a traves de modelos y software de Simulacion.</p>
+                </div>
+                
+                <div class="section__area">
+                    <img src="../image/servicios/bombeo.png" alt="icono5">
+                    <h3>Proyectos de Bombeo Solar para acuiferos</h3><p>Diseño y provision de soluciones para bombeo de agua en aplicaciones agricolas.</p>
+                </div>
+                
+                <div class="section__area">
+                    <img src="../image/servicios/termica.svg" alt="icono6">
+                    <h3>Proyectos de Energia Solar Termica</h3><p>Soluciones para calentamiento de agua y calefaccion a partir de energia solar.</p>
+                </div>  
+            </div>
+
+        </section>
+     
+        
+    <footer class="footer">
+                    
+        <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+
+        <div> 
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="../image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="../image/footer/youtube.png" alt="icono_youtube"></a></li>
+                <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="../image//footer/instagram.png" alt="logo_instagram"></a></li>
+                <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
+            </ul>         
+        </div>
+
+        <div class="footer__author">
+            <p >INGENIERIA Y TECNOLOGIA SAS</p>
+            <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
+        </div>
+    </footer>                   
+
+    <script>
+        AOS.init();
+    </script>  
+
+    </body>
+</html>
