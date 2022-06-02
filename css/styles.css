@@ -65,7 +65,15 @@ a{
     border-bottom-color:#fab434;
     border-bottom-style:solid;
     border-width: 3px; 
-} 
+} /* Para BS */
+
+.navbar-nav a:hover{
+    transition: 0.3s;
+    border-bottom-color:#fab434;
+    border-bottom-style:solid;
+    border-width: 3px;   
+
+}
 
 .nav_ham{
     display: none;
@@ -173,58 +181,31 @@ a{
 
 } /* Estilo para Titulos H1 - lo usaremos en diferentes puntos del sitio web */
 
-.section_socios{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items:center;
-    align-items: baseline; 
-    
-} /* Se aplica grid para construir esta seccion */
+/* Se aplica grid para construir esta seccion */
 
-.section_socios li a img{
-    width: 350px;
-    
-}
 
-.section_socios li:hover{
+.container img:hover{
     transition: 0.3s;
     border-bottom-width: 5px;
     border-bottom-color:#fab434;
     border-bottom-style:solid;
 } /* Animacion de socios */
 
-/* Responsive INDEX.HTML */
-
 @media screen and (max-width: 1088px){
     .title_h1{
         font-size: 20px;
         text-align: center;
     }
-    .section_socios{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr ; /* Grid 2 x 3 */
-        justify-content:center;
-        align-items: center;   
-    } /* Se reformula la tabla para las nuevas medidas */
-    
-    .section_socios li a img{
-        width: 250px;
-    }
+
 }
 
-@media screen and (max-width: 645px){
-    .section_socios{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* Grid 1 x 6 */
-    } /* /* Se reformula la tabla para las nuevas medidas minimas */ */
-    .section_socios li a img{
-        width: 200px;
-    }
-    
+.col img{
+    width: 50%;
+    position: relative;
+    left: 150px;
 }
+
+
 
 
 /* -------------- NOSOTROS.HTML---------- */
@@ -608,6 +589,7 @@ a{
 
 
 /* -------PROYECTOS.HTML------ */
+
 
 .section_proyectos{
     display: grid;

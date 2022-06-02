@@ -11,26 +11,34 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="icon" href="../image/index/fondo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- BS -->
     <title>PROYECTOS</title>
 </head>
 <body>
-   <header class="header"> 
-       
-        <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
-        
-        <nav class="header__menu">
-            <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
-            <input type="checkbox" value="" id="menu_ham" class="nav_ham">
-             
-            <ul class="nav_list"> <!-- Empleo lista no ordenada para menu de navegacion, tal cual vimos en ejemplo de clases -->
-                <li><a href="../index.html">INICIO</a></li>
-                <li> <a href="./nosotros.html">NOSOTROS</a></li>
-                <li> <a href="./servicios.html"> SERVICIOS</a></li>
-                <li> <a href="./proyectos.html"> PROYECTOS</a></li>
-                <li> <a href="./contacto.html"> CONTACTO</a></li>
-            </ul>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex justify-content-end gap-5">
+                        
+                        <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+                        <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
+                        <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
+                        <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>
+                        
+                    </div>
+                </div>
+            </div>
         </nav>
- </header> <!-- Menu navegable de la Web E e Isologotipo -->
+    </header>
        
     <main>
         <section class="section_proyectos animate__animated animate__slideInRight">
@@ -60,54 +68,68 @@
             </div>
 
         </section>
+
+        <div><h1 class="title_h1">NUESTROS PROYECTOS</h1></div> <!-- BS -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="../image/proyectos/portho.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                  <h5>Proyecto Portho Gelatto 20KW - Comercial</h5>
+                  <p>Instalacion de sistema On Grid para reducir costos en energia empleada en produccion y refrigeracion de helados artesanales de primera calidad <br> El sistema cuenta con 48 Paneles JINKO SOLAR, Monocristalinos de 465Wp de potencia. <br> Se instala Inversor DC/AC On Grid de 20KWac, provisto por el fabricante Growatt. <br> El montaje se realiza en forma coplanar al techo, de acuerdo a restricciones impuestas por la estrucutra edilicia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/proyectos/terluk.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                  <h5>Proyecto Familia Terluk 10KW - Residencial</h5>
+                  <p>Instalacion de sistema On Grid Residencial para reducir costos en energia de una familia tipo, al mismo tiempo que se generan ingresos pasivos por la comercializacion de exedentes de energia. <br>Fueron instalados 27 Paneles JINKO SOLAR monocristalinos de 400Wp vinculados a Inversor DC/AC Growatt. <br> La instalacion se complemente con un multimedidor inteligente que le permite al propietario un registro total de su consumo y generacion.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/proyectos/freddy.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                  <h5>Proyecto Freddy SRL 10KW - Comercial</h5>
+                  <p>Instalacion de sistema On Grid para un cliente abocado al equipamiento de camiones y movilidades para la alta montaña y mineria. Actualmente se encuentra trabajando en la certificacion de Normas ISO 14001 de gestion ambiental, por lo que se incoporò una fuente de energia renovable para su actividad comercial, ratificando su compromiso con el medio ambiente. <br> La instalacion cuenta de 28 Paneles AMERISOLAR vinculados a dos inversores SMA de 5KWac Trifasicos. El montaje se realiza en zona de techos de galpones.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/proyectos/helios.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                  <h5>Proyecto Helios Santa Rosa 6MW Mendoza</h5>
+                  <p>INGETEC durante 2020/2021 tuvo a su cargo el desarrollo de la ingenieria basica, ingenieria de detalle e inspeccion de obra para la construccion del Parque Solar Helios Santa Rosa, propiedad de la Compañia Tassaroli, ubicado en Santa Rosa, Mendoza. Este es el primer parque solar de Latinoamerica en implementar Paneles Solares Bifaciales, capaces de generar energia por ambas caras</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     
-    </main>
+    
+    <footer class="footer">
         
-        <div class="section_clientes">
-            <div class="section__cliente" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                <h2>Proyecto Portho Gelatto 20KW - Comercial</h2>
-                <img src="../image/proyectos/portho.jpeg" alt="proyecto_porto">
-                <p>Instalacion de sistema On Grid para reducir costos en energia empleada en produccion y refrigeracion de helados artesanales de primera calidad <br> El sistema cuenta con 48 Paneles JINKO SOLAR, Monocristalinos de 465Wp de potencia. <br> Se instala Inversor DC/AC On Grid de 20KWac, provisto por el fabricante Growatt. <br> El montaje se realiza en forma coplanar al techo, de acuerdo a restricciones impuestas por la estrucutra edilicia  </p>   
-            </div>
-
-            <div class="section__cliente" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <h2>Proyecto Familia Terluk 10KW - Residencial</h2>
-                <img src="../image/proyectos/terluk.jpeg" alt="proyecto_terluk">
-                <p>Instalacion de sistema On Grid Residencial para reducir costos en energia de una familia tipo, al mismo tiempo que se generan ingresos pasivos por la comercializacion de exedentes de energia. <br>Fueron instalados 27 Paneles JINKO SOLAR monocristalinos de 400Wp vinculados a Inversor DC/AC Growatt. <br> La instalacion se complemente con un multimedidor inteligente que le permite al propietario un registro total de su consumo y generacion. </p>
-            </div>
-
-            <div class="section__cliente" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-             <h2>Proyecto Freddy SRL 10KW - Comercial</h2>
-             <img src="../image/proyectos/freddy.jpg" alt="proyecto_freddy">
-             <p>Instalacion de sistema On Grid para un cliente abocado al equipamiento de camiones y movilidades para la alta montaña y mineria. Actualmente se encuentra trabajando en la certificacion de Normas ISO 14001 de gestion ambiental, por lo que se incoporò una fuente de energia renovable para su actividad comercial, ratificando su compromiso con el medio ambiente. <br> La instalacion cuenta de 28 Paneles AMERISOLAR vinculados a dos inversores SMA de 5KWac Trifasicos. El montaje se realiza en zona de techos de galpones.</p>   
-            </div>
-
-            <div class="section__cliente" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-                <h2>Proyecto Helios Santa Rosa 6MW Mendoza</h2>
-                <img src="../image/proyectos/helios.png" alt="proyecto_helios">
-                <p>INGETEC durante 2020/2021 tuvo a su cargo el desarrollo de la ingenieria basica, ingenieria de detalle e inspeccion de obra para la construccion del Parque Solar Helios Santa Rosa, propiedad de la Compañia Tassaroli, ubicado en Santa Rosa, Mendoza. Este es el primer parque solar de Latinoamerica en implementar Paneles Solares Bifaciales, capaces de generar energia por ambas caras.</p>
-            </div>
-        </div>
-
-        <footer class="footer">
-                    
-            <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
-    
-            <div> 
-                <ul>
-                    <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="../image/footer/wsp.png" alt="icono_whatsapp"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="../image/footer/youtube.png" alt="icono_youtube"></a></li>
-                    <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="../image//footer/instagram.png" alt="logo_instagram"></a></li>
-                    <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
-                </ul>         
+        <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+        
+        <div> 
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="../image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="../image/footer/youtube.png" alt="icono_youtube"></a></li>
+                <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="../image//footer/instagram.png" alt="logo_instagram"></a></li>
+                <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
+            </ul>         
             </div>
     
             <div class="footer__author">
@@ -119,5 +141,6 @@
     <script>
         AOS.init();
     </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
