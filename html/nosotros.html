@@ -16,35 +16,35 @@
         <title>NOSOTROS</title>
     </head>
 
-<body>
+    <body>
     
-        <header class="header"> 
-            
-            <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
-            
-            <nav class="header__menu">
-                <label for="menu_ham"><img class="nav_ham nav_ham-img" src="../image/header/menu_burger.svg" alt="menu_hamburguesa"></label>
-                <input type="checkbox" value="" id="menu_ham" class="nav_ham">
-                
-                <ul class="nav_list">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li> <a href="./nosotros.html">NOSOTROS</a></li>
-                    <li> <a href="./servicios.html"> SERVICIOS</a></li>
-                    <li> <a href="./proyectos.html"> PROYECTOS</a></li>
-                    <li> <a href="./contacto.html"> CONTACTO</a></li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex justify-content-end gap-5">
+                    
+                        <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+                        <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
+                        <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
+                        <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+                    </div>
+                </div>
+            </div>
             </nav>
-        </header>
+        </header> <!-- header y nav con BS -->
 
 
         <main> <!-- Utilizo etiqueta semantica main para esta seccion porque es la mas importante de este archivo HTML -->
-            
             <section class="section_slide animate__animated animate__slideInRight">
                 <video src="../video/nosotros2.mp4" autoplay loop onloadstart="this.muted=true"></video> 
             </section>  
-
             <h1 class="title_h1">SOBRE NOSOTROS</h1>
-
             <section class="section_nosotros animate__animated animate__slideInLeft">
                 <p>
                     INGETEC es una compañía argentina que surge a partir de la iniciativa de distintos profesionales que decidieron potenciar de manera conjunta sus diversas experiencias y trayectorias laborales, en los campos de la energia solar y mercado electrico. Fuertemente convencidos de proporcionar soluciones a medida para cada cliente.
@@ -63,7 +63,7 @@
                 <h2 class="title_h2">CONOZCA NUESTRO STAFF DE PROFESIONALES</h2> <!-- Fotos provisarias de los socios y linkeo a Linkedin -->
                 
                 <div class="section_staff" data-aos="fade-up"
-                data-aos-duration="3000">
+                data-aos-duration="3000"> <!-- Transicion -->
                     <div>
                         <img src="../image/nosotros/miembro1.png" alt="integrante1">
                         <a href="https://www.linkedin.com/in/juan-manuel-julian-0a2374173/"><h3>Ing. Juan Manuel JULIAN - Socio Gerente</h3></a>
@@ -80,10 +80,9 @@
                         <p>Investigador con amplia trayectoria en desarrollo de proyectos solares fotovoltaicos a gran escala y produccion de tecnologia fotovoltaica</p> 
                     <div>    
                 </div>
-                </section>
+            </section>
 
-            <footer class="footer">
-                        
+            <footer class="footer">       
                 <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
         
                 <div> 

@@ -1,5 +1,5 @@
 
-/* Ahustes de WEB */
+/* AJustes de WEB */
 *{
     margin: 0;
     padding: 0;
@@ -23,49 +23,11 @@ a{
 
 /* -------HEADER------ */
 
-.header{
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Grid para contenido de header */
-    background-color: white;
-
-    border-bottom-style:solid;
-    border-top-style:solid; 
-
-} /* La seccion correspondiente a header sigue un diseño grid */
-
-.header__menu{
-    display: flex;
-    align-items: center;
-
-}
-
 .header__logo img{
     width: 350px;
     
-} /* Ajuste de imagen logo */
+} /* Ajuste de imagen logo en header */
 
-.header__menu ul{
-    display: flex;
-    width: 100%;
-    height: 50%;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-
-.header__menu ul li a{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
-
-.header__menu ul li:hover {
-    transition: 0.3s;
-    border-bottom-color:#fab434;
-    border-bottom-style:solid;
-    border-width: 3px; 
-} /* Para BS */
 
 .navbar-nav a:hover{
     transition: 0.3s;
@@ -73,90 +35,7 @@ a{
     border-bottom-style:solid;
     border-width: 3px;   
 
-}
-
-.nav_ham{
-    display: none;
-} 
-
-/* -----RESPONSIVE HEADER------ */
-
-@media screen and (max-width: 1088px){ /* menú hamburguesa, se aplica a partir de ancho donde se produce el solape de menu nav */
-    nav ul {
-        display: none;
-    }
-
-    nav { /* para acomodar el logo de menú */
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .nav_ham-img {
-        display: flex;
-        width: 50px;
-        cursor: pointer;
-        align-content: center;
-        position: relative;
-        right: 10px;
-    }
-
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        height: 100vh;
-        z-index: 20;  
-        top: 98px; /* Es la medida justa para que quede bien */
-        background: linear-gradient(180deg, rgba(0,0,0,1) 28%, rgba(14,14,14,1) 58%, rgba(24,24,24,1) 86%, rgba(35,35,35,1) 100%); 
-        transition: clip-path 0.8s ease-in-out;
-        clip-path: inset(0 0 100% 0); /* animación que va desde arriba hacia abajo */
-    }
-
-    .nav_ham:checked + .nav_list {
-        clip-path: inset(0 0 0 0);       
-    }
-
-    .header__logo img{
-        width:300px;
-    }
-    
-    .header__menu{
-       
-        justify-content:right;
-        
-    }
-    .header__menu ul li a{
-        color: white;
-
-    } /* Cambio a color blanco para menu burger con fondo negro */
-  
-    
-}/* Responsive para menu hamburguesa y header */
-
-@media screen and (max-width: 400px){ 
-    
-    .nav_list {
-         
-        top: 75px; /* Es la medida justa para que quede bien */
-    }
-
-    .header__logo img{
-        width:220px;
-    }
-
-    .header__menu{
-       
-        justify-content:right;
-    
-    }
-
-    .nav_ham-img {
-        width: 35px;
-    }
-
-
-} /* se ajusta tamaño de logo e imagen de menu hamurguesa */
-
+} /* Estilo a BS */
 
 /* ---------INDEX.HTML----------------------- */
 
@@ -181,9 +60,6 @@ a{
 
 } /* Estilo para Titulos H1 - lo usaremos en diferentes puntos del sitio web */
 
-/* Se aplica grid para construir esta seccion */
-
-
 .container img:hover{
     transition: 0.3s;
     border-bottom-width: 5px;
@@ -204,8 +80,6 @@ a{
     position: relative;
     left: 150px;
 }
-
-
 
 
 /* -------------- NOSOTROS.HTML---------- */
@@ -650,46 +524,7 @@ a{
     margin-top: 25px;
 }
 
-.section_clientes{
- 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    row-gap: 20px;
-    column-gap: 10px;
-    margin-top: 20px;
-        
-}
 
-.section__cliente{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    
-}
-
-.section__cliente img{
-    width: 80%;
-    border-radius: 75px; /* Borde redondeado imagen */
-}
-.section__cliente h2{
-    text-align: center;
-}
-.section__cliente p{
-    grid-area: text;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 50px;
-    text-align: justify;
-    padding: 10px 50px 10px 50px; 
-    width: 90%;
-    height: auto;
-}
-
-.section_clientes img:hover{
-width: 100%;
-transition: 1s;
-}
 /* Responsive Proyectos */
 
 @media screen and (max-width:1200px ){
@@ -716,13 +551,6 @@ transition: 1s;
         display: none;
     } /* Elimino video */
 
-    .section_clientes {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-
-    }/* Nueva estrucutra de grid responsive */
 
     .section__tarjeta{
         height: 80px;  

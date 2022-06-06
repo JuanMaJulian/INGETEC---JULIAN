@@ -1,104 +1,96 @@
 
 <!DOCTYPE html>
-    <html lang="es"> <!-- Español -->
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           
-            <!-- Informacion de mi sitio web -->
-            <meta name="keywords" content="energia solar,ingenieria, energias renovables, energia solar fotovoltaica, energia solar termica, consultoria"/>
-            <meta name="description" content="Empresa lider de la region en el desarrollo de Proyectos de Energia Renovable"/>
-            <meta name="author" content="Ing. Juan Manuel Julian" />
-            <meta name="copyright" content="INGETEC SAN JUAN" />
-            <link rel="stylesheet" href="./css/normalize-8.0.1.css" type="text/css">
-            <link rel="stylesheet" href="./css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
-            <link rel="icon" href="/image/index/fondo.svg">
+  <html lang="es"> <!-- Español -->
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <!-- Informacion de mi sitio web -->
+      <meta name="keywords" content="energia solar,ingenieria, energias renovables, energia solar fotovoltaica, energia solar termica, consultoria"/>
+      <meta name="description" content="Empresa lider de la region en el desarrollo de Proyectos de Energia Renovable"/>
+      <meta name="author" content="Ing. Juan Manuel Julian" />
+      <meta name="copyright" content="INGETEC SAN JUAN" />
+      <link rel="stylesheet" href="./css/normalize-8.0.1.css" type="text/css">
+      <link rel="stylesheet" href="./css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+      <link rel="icon" href="/image/index/fondo.svg">
+      <!-- BS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <title>INICIO</title>
+    </head>
+      
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="header__logo" href="/"><img src="./image/header/logo3.png" alt="logo_de_empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav d-flex justify-content-end gap-5">
+                <a class="nav-link active text-dark text-center" aria-current="page" href="./index.html">INICIO</a>
+                <a class="nav-link text-dark text-center" href="./html/nosotros.html">NOSOTROS</a>
+                <a class="nav-link text-dark text-center" href="./html/servicios.html">SERVICIOS</a>
+                <a class="nav-link text-dark text-center" href="./html/proyectos.html">PROYECTOS</a>
+                <a class="nav-link text-dark text-center" href="./html/contacto.html">CONTACTO</a>  
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header> <!-- header y nav con BS -->
 
-            <!-- BS -->
-           
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-            <title>INICIO</title>
-        </head>
+      <section class="section_slide">
+          <video src="./video/legislatura.mp4" autoplay loop onloadstart="this.muted=true"></video>
+      </section>   
+      
+      <section>
+          <h1 class="title_h1">NUESTROS SOCIOS COMERCIALES</h1>
+      </section>
+
+      <div class="container-fluid"> <!-- Grid BS -->
+            <div class="row">
+              <div class="col">
+                <a href="https://www.canadiansolar.com/"> <img src="./image/index/canadian.jpg" alt="logo_canadiansolar"></a>
+              </div>
+              <div class="col">
+                <a href="https://www.growatt.mx/"> <img src="./image/index/growatt.jpg" alt="logo_growatt" ></a>
+              </div>
+              <div class="col">
+                <a href="https://solar.huawei.com/es/"> <img src="./image/index/huawei.jpg" alt="logo_huawei"></a>
+              </div>
+            </div> <!-- Fila 1 -->
+            
+            <div class="row">
+              <div class="col align-self-start">
+                <a href="https://www.trinasolar.com/es"> <img src="./image/index/trina.jpg" alt="logo_trina"></a>
+              </div>
+              <div class="col align-self-center">
+                <a href="https://www.jinkosolar.com/en/site/tigerpro"> <img src="./image/index/jinko.jpg" alt="logo_jinko"></a>
+              </div>
+              <div class="col align-self-end">
+                <a href="https://www.sma-south-america.com/"> <img src="./image/index/sma.jpg" alt="logo_sma"></a>
+              </div>
+            </div><!-- Fila 2 -->
+      </div>
+
+      <footer class="footer">
         
-        <body>
-          <header>
-            <nav class="navbar navbar-expand-lg bg-light">
-              <div class="container-fluid">
-                <a class="header__logo" href="/"><img src="./image/header/logo3.png" alt="logo_de_empresa"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                
-              <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex justify-content-end gap-5">
+        <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
+        
+        <ul>
+            <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="./image/footer/wsp.png" alt="icono_whatsapp"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="./image/footer/youtube.png" alt="icono_youtube"></a></li>
+            <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="./image//footer/instagram.png" alt="logo_instagram"></a></li>
+            <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="./image//footer/facebook.png" alt="logo_facebook"></a></li>
+        </ul>        
+        
+        <div class="footer__author">
+            <p >INGENIERIA Y TECNOLOGIA SAS</p>
+            <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
+        </div>
+      </footer>
 
-                  <a class="nav-link active text-dark text-center" aria-current="page" href="./index.html">INICIO</a>
-                  <a class="nav-link text-dark text-center" href="./html/nosotros.html">NOSOTROS</a>
-                  <a class="nav-link text-dark text-center" href="./html/servicios.html">SERVICIOS</a>
-                  <a class="nav-link text-dark text-center" href="./html/proyectos.html">PROYECTOS</a>
-                  <a class="nav-link text-dark text-center" href="./html/contacto.html">CONTACTO</a>
-                  
-                </div>
-              </div>
-            </div>
-            </nav>
-          </header>
-  
-          <section class="section_slide">
-              <video src="./video/legislatura.mp4" autoplay loop onloadstart="this.muted=true"></video>
-          </section>   
-          
-          <section>
-              <h1 class="title_h1">NUESTROS SOCIOS COMERCIALES</h1>
-          </section>
-
-          <div class="container-fluid"> <!-- Grid BS -->
-                <div class="row">
-                  <div class="col">
-                    <a href="https://www.canadiansolar.com/"> <img src="./image/index/canadian.jpg" alt="logo_canadiansolar"></a>
-                  </div>
-                  <div class="col">
-                    <a href="https://www.growatt.mx/"> <img src="./image/index/growatt.jpg" alt="logo_growatt" ></a>
-                  </div>
-                  <div class="col">
-                    <a href="https://solar.huawei.com/es/"> <img src="./image/index/huawei.jpg" alt="logo_huawei"></a>
-                  </div>
-                </div> <!-- Fila 1 -->
-                
-                <div class="row">
-                  <div class="col align-self-start">
-                    <a href="https://www.trinasolar.com/es"> <img src="./image/index/trina.jpg" alt="logo_trina"></a>
-                  </div>
-                  <div class="col align-self-center">
-                    <a href="https://www.jinkosolar.com/en/site/tigerpro"> <img src="./image/index/jinko.jpg" alt="logo_jinko"></a>
-                  </div>
-                  <div class="col align-self-end">
-                    <a href="https://www.sma-south-america.com/"> <img src="./image/index/sma.jpg" alt="logo_sma"></a>
-                  </div>
-                </div><!-- Fila 2 -->
-
-              </div>
-
-          <footer class="footer">
-            
-            <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
-            
-            <ul>
-                <li><a href="https://api.whatsapp.com/send?phone=542646707536&text=Hola!"><img src="./image/footer/wsp.png" alt="icono_whatsapp"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="./image/footer/youtube.png" alt="icono_youtube"></a></li>
-                <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="./image//footer/instagram.png" alt="logo_instagram"></a></li>
-                <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="./image//footer/facebook.png" alt="logo_facebook"></a></li>
-            </ul>        
-            
-            <div class="footer__author">
-                <p >INGENIERIA Y TECNOLOGIA SAS</p>
-                <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
-
-        </body>
-    </html>
