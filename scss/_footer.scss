@@ -1,0 +1,116 @@
+//estilo para footer
+$color:#fab434;
+
+
+.footer{
+    display: grid;
+    grid-template-rows:0.25fr 1fr 1fr; /* se emplea grid para bloques de footer */
+    background-color: black;
+    
+    border-bottom-width: 5px;
+    border-top-color:$color;
+    border-top-style:solid;
+}
+
+.footer{
+
+    ul{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        justify-content:center;
+    }/* Segundo bloque de grid contiene los iconos que se ordenan con flexbox */
+}
+
+
+.footer {
+
+    ul {
+        li {
+        margin: 20px;
+        max-height:min-content;
+        }
+    }
+}
+
+.footer {
+
+    ul {
+        li {
+            img{
+                width: 60px; 
+                @media screen and (max-width: 400px){
+                    width: 35px;
+                }
+                @media screen and (max-width: 1000px){
+                    width: 40px;
+    
+                }
+               
+            }
+            
+
+        }
+    }
+}
+
+
+.footer{
+
+    p{
+        font-size: 20px;
+        background-color: black;
+        color:white;
+        text-align: center;
+        letter-spacing: 3px; 
+            @media screen and (max-width: 400px){
+                display:block;
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+            @media screen and (max-width: 1000px){
+                display:block;
+                font-size: 10px;
+                letter-spacing: 2px;
+
+            }
+
+    } 
+
+
+}
+.footer{
+    ul{
+
+        li:hover{
+           transition: 0.1s;
+           border-bottom-width: 2px;
+           border-bottom-color:white;
+           border-bottom-style:solid;
+           animation: tiembla 1s infinite;
+        }
+    }
+} 
+@keyframes tiembla{
+    0%  { transform:rotateZ(-5deg); }
+    50% { transform:rotateZ( 0deg) scale(.8); }
+    100%{ transform:rotateZ( 5deg); }
+} /* Animacion de temblor */
+   
+.footer__author{
+
+    p{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+        @media screen and (max-width: 400px){
+            font-size: 10px;  
+        }
+        @media screen and (max-width: 1000px){
+            font-size: 10px;
+        }
+    }
+
+}
+

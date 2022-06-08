@@ -1,0 +1,73 @@
+// Estilado Para pagina index.html completa + header + footer
+//header y footer se incluyen desde archivos externos scss
+@use 'header';
+
+@use'footer';
+
+$color:#fab434;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+
+} /* Reseteo */
+
+li{
+    list-style: none; /* Saco viñetas de lista */
+    text-decoration: none;  
+    text-decoration-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+}
+
+
+.section_slide{
+    video{
+        display: flex;
+        width: 100%;
+}
+     
+} /* Ajuste para video provisorio hasta que se construya slide o carrusel */
+
+.title_h1{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    letter-spacing: 5px;
+    margin:auto;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color:$color;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color:$color;
+    @media screen and (max-width: 1088px){
+        font-size: 20px;
+        text-align: center;
+    }
+
+} 
+
+.container {
+
+    img:hover{
+        transition: 0.3s;
+        border-bottom-width: 5px;
+        border-bottom-color:$color;
+        border-bottom-style:solid;
+    } /* Animacion de socios */
+
+}
+
+.col{
+    img{
+        width: 50%;
+    }
+}
