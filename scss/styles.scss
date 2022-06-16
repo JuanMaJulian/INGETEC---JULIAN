@@ -1,10 +1,15 @@
-// Estilado Para pagina index.html completa + header + footer
+
+// Este sera el archivo origen para generar el .css desde .sass 
+@use '_nosotros';
+@use'_servicios';
+@use'_proyectos';
+@use'_contacto';
+//SASS index.html
 //header y footer se incluyen desde archivos externos scss
 @use 'header';
-
 @use'footer';
+@import 'variables';
 
-$color:#fab434;
 
 
 *{
@@ -44,10 +49,10 @@ a{
     margin:auto;
     border-top-style: solid;
     border-top-width: 3px;
-    border-top-color:$color;
+    border-top-color:map-get($colores, "orange-ingetec");
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    border-bottom-color:$color;
+    border-bottom-color:map-get($colores, "orange-ingetec");
     @media screen and (max-width: 1088px){
         font-size: 20px;
         text-align: center;
@@ -60,7 +65,7 @@ a{
     img:hover{
         transition: 0.3s;
         border-bottom-width: 5px;
-        border-bottom-color:$color;
+        border-bottom-color:map-get($colores, "orange-ingetec");
         border-bottom-style:solid;
     } /* Animacion de socios */
 

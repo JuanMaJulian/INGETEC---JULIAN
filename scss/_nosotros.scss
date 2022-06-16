@@ -1,0 +1,168 @@
+
+@import 'variables';
+
+.section_slide{
+    display: flex;
+} /* Para video */
+
+.section_nosotros{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 35%;
+    width: 100%;
+
+    p{
+        width: 65%;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        padding:10px;
+        text-align: justify;
+        padding: 20px; 
+        @media screen and (max-width: 1500px){
+            width: 100%;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 50px;
+            padding:15px;
+            text-align: justify;
+            padding: 20px; 
+
+        } 
+    }
+
+    p {
+        strong{
+            background-color: white;
+            color: map-get($colores, "orange-ingetec");
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+    }
+
+    img{
+        width: 30%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px map-get($colores, "orange-ingetec");
+        @media screen and (max-width: 1500px){
+            display: none;
+
+        }
+    } /* valores ajustados para alcanzar ubicacion deseada de imagen */
+}
+
+
+
+.title_h2{
+    display:block;
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color:map-get($colores, "orange-ingetec");
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color:map-get($colores, "orange-ingetec"); 
+    padding: 20px;
+        @media screen and (max-width: 1150px){
+            text-align: justify;
+            letter-spacing: 3px;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            font-size:15px;
+
+        }
+        @media screen and (max-width: 600px){
+            text-align: center;
+            letter-spacing: 3px;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            font-size:15px;
+
+        }
+
+}
+.section_staff{
+    display:flex;
+    flex-wrap: nowrap;
+    @media screen and (max-width: 1150px){
+        justify-content: center;
+
+    }
+    @media screen and (max-width: 600px){
+        display:flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column; /* conformo columna con imagen y datos de cada socio */
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+
+        img{
+            width: 50%; 
+            @media screen and (max-width: 1150px){
+                width: 30%;  
+            } 
+            @media screen and (max-width: 600px){
+                width: 40%; 
+            }
+        }
+
+        h3{
+            text-align: center;
+            font-size: 25px;
+            padding: 10px;
+            @media screen and (max-width: 1150px){
+                text-align: center;
+                font-size: 15px;
+                padding: 10px;
+            }
+            @media screen and (max-width: 600px){
+                text-align: center;
+                font-size: 10px;
+                padding: 10px;
+
+            }
+        }
+
+        p{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            @media screen and (max-width: 1150px){
+                text-align: center;
+                margin-top: 10px;
+                font-size: 10px;
+            }
+            @media screen and (max-width: 600px){
+                text-align: justify;
+                margin-top: 10px;
+                font-size: 10px;
+            }
+        }
+
+        &:hover{
+            transition: 0.8s ease-in-out; /* Transicion */
+            background-image: linear-gradient(to bottom, white 80%, map-get($colores, "orange-ingetec") 100%); 
+        }
+    }
+}
+
+
+
+
+
+
+
