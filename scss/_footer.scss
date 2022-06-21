@@ -43,12 +43,15 @@
         }
 
         p{
+    
             @extend .footer__author;
     
         } 
     }/* Segundo bloque de grid contiene los iconos que se ordenan con flexbox */
 
-
+    p{
+        text-align: center;
+    }
 }
 
 .footer__author{
@@ -60,6 +63,7 @@
         color: white;
         font-size: 15px;
         padding-bottom: 5px;
+        text-align: center;
             @media screen and (max-width: 400px){
                 font-size: 10px;  
             }
@@ -68,6 +72,7 @@
             }
     }
 }
+
 
 @keyframes tiembla{
     0%  { transform:rotateZ(-5deg); }

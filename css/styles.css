@@ -498,6 +498,10 @@
     width: 40px;
   }
 }
+.footer p {
+  text-align: center;
+}
+
 .footer__author, .footer ul p {
   display: flex;
   flex-direction: column;
@@ -508,6 +512,7 @@
   color: white;
   font-size: 15px;
   padding-bottom: 5px;
+  text-align: center;
 }
 @media screen and (max-width: 400px) {
   .footer__author p, .footer ul p p {
