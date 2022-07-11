@@ -17,33 +17,32 @@
     </head>
 
     <body>
-    
+    <!-- Inicio Header -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-flex justify-content-end gap-5">
-                    
-                        <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
-                        <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
-                        <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
-                        <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
-                        <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+            <nav class="navbar navbar-expand-xl bg-light">
+                <div class="container-fluid">
+                    <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav d-flex justify-content-end gap-5">
+                        
+                            <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+                            <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
+                            <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
+                            <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+                        </div>
                     </div>
                 </div>
-            </div>
             </nav>
         </header> <!-- header y nav con BS -->
+        <!-- Fin Header -->
 
 
-        <main> <!-- Utilizo etiqueta semantica main para esta seccion porque es la mas importante de este archivo HTML -->
-            <section class="section_slide animate__animated animate__slideInRight">
-                <video src="../video/nosotros2.mp4" autoplay loop onloadstart="this.muted=true"></video> 
-            </section>  
+        <main> <!-- Seccion con informacion principal de esta pagina HTML -->
+           
             <h1 class="title_h1">SOBRE NOSOTROS</h1>
             <section class="section_nosotros animate__animated animate__slideInLeft">
                 <p>
@@ -53,17 +52,17 @@
                 
                     <br> Actualmente INGETEC posee base de operaciones tecnicas y comerciales en Provincias de San Juan, Mendoza y Buenos Aires, Argentina.
                     <br>
-                    <strong>Somos INGETEC, sabemos de Energia.</strong>
+                    <strong>Somos INGETEC, sabemos de Energia Solar.</strong>
                 </p>
-                <img src="../image/nosotros/NOSOTROS.webp" alt="ingenieros_trabajando"> 
+                <img src="../image/nosotros/nosotros.jpg" alt="ingenieros_trabajando"> 
             </section>
         </main>
 
             <section>
-                <h2 class="title_h2">CONOZCA NUESTRO STAFF DE PROFESIONALES</h2> <!-- Fotos provisarias de los socios y linkeo a Linkedin -->
+                <h2 class="title_h2">CONOZCA NUESTRO STAFF DE PROFESIONALES</h2> <!--Presentacion de los socios y linkeo a Linkedin -->
                 
                 <div class="section_staff" data-aos="fade-up"
-                data-aos-duration="3000"> <!-- Transicion animada -->
+                data-aos-duration="3000"> <!-- Transicion animada para tarjeta con los socios -->
                     <div>
                         <img src="../image/nosotros/miembro1.png" alt="integrante1">
                         <a href="https://www.linkedin.com/in/juan-manuel-julian-0a2374173/"><h3>Ing. Juan Manuel JULIAN - Socio Gerente</h3></a>
@@ -77,10 +76,12 @@
                     <div>
                         <img src="../image/nosotros/miembro3.png" alt="integrante3"> 
                         <a href="https://www.linkedin.com/in/lucasestrada/"> <h3>Dr.Ing. Lucas ESTRADA - Socio Gerente.</h3></a>
-                        <p>Investigador con amplia trayectoria en desarrollo de proyectos solares fotovoltaicos a gran escala y produccion de tecnologia fotovoltaica</p> 
+                        <p>Investigador trayectoria en desarrollo de proyectos solares fotovoltaicos de gran escala y mercados</p> 
                     <div>    
                 </div>
             </section>
+           
+            <!-- Inicio Footer -->
 
             <footer class="footer">       
                 <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
@@ -98,8 +99,10 @@
                     <p >INGENIERIA Y TECNOLOGIA SAS</p>
                     <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
                 </div>
-            </footer>           
+            </footer>   
+            <!-- Fin Footer -->        
             
+            <!-- Scripts -->
             <script>
                 AOS.init();
             </script>  

@@ -16,9 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 } /* Reseteo */
+
+
 
 li{
     list-style: none; /* Saco viñetas de lista */
@@ -32,19 +34,24 @@ a{
     color: black;
 }
 
-
 .section_slide{
+    overflow: hidden;
     video{
+        position: relative;
         display: flex;
-        width: 100%;
-}
-     
-} /* Ajuste para video provisorio hasta que se construya slide o carrusel */
+        width: 100vw;
+        @media screen and (max-width: 552px){
+            width: 150vw;
+            right: 100px;
+        }
+    } /* Ajustes de video para Responsive */
+
+} /* Video principal de la empresa */
 
 .title_h1{
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px;
     letter-spacing: 5px;
     margin:auto;
     border-top-style: solid;
@@ -52,10 +59,21 @@ a{
     border-top-color:map-get($colores, "orange-ingetec");
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    font-size: 25px;
     border-bottom-color:map-get($colores, "orange-ingetec");
-    @media screen and (max-width: 1088px){
+    box-shadow: inset 0px 0px 5px map-get($colores, "orange-ingetec");
+    border-radius: 5px;
+    @media screen and (max-width: 1140px){
         font-size: 20px;
         text-align: center;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+    @media screen and (max-width: 540px){
+        font-size: 15px;
+        text-align: center;
+        border-top-width: 0.5px;
+        border-bottom-width: 0.5px;
     }
 
 } 
@@ -67,12 +85,51 @@ a{
         border-bottom-width: 5px;
         border-bottom-color:map-get($colores, "orange-ingetec");
         border-bottom-style:solid;
-    } /* Animacion de socios */
+    } /* Animacion para carrousel con isologotipos de socios estrategicos*/
 
 }
 
 .col{
+
     img{
         width: 50%;
     }
+}
+
+.carousel{
+    background: white;
+    position: relative;
+}
+.carousel__lista{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.carousel__elemento{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 20px;
+    img{
+        width: 300px;
+        
+        
+    }   
+}
+.carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    background: none;
+    color:map-get($colores, "orange-ingetec");
+} 
+
+.carousel__siguiente{
+    @extend .carousel__anterior;
+    right: 0;
 }

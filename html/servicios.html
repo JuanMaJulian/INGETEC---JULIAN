@@ -17,29 +17,30 @@
     </head>
 
     <body>
-
+        <!-- Inicio Header -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-flex justify-content-end gap-5">
-                    
-                        <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
-                        <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
-                        <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
-                        <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
-                        <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+            <nav class="navbar navbar-expand-xl bg-light">
+                <div class="container-fluid">
+                    <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav d-flex justify-content-end gap-5 container-sm">
+                        
+                            <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+                            <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
+                            <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
+                            <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+                        </div>
                     </div>
                 </div>
-            </div>
             </nav>
         </header> <!-- header y nav con BS -->
+         <!-- Fin Header -->
         
-        <main>
+        <main> <!-- Seccion con informacion principal de los servicios prestados -->
             <section class="section_servicios">
                 <h1 class="title_h1">NUESTROS SERVICIOS</h1>
                 <p>
@@ -56,58 +57,58 @@
         </main>
 
         <div>
-            <h2 class="title_h2">AREAS DE SERVICIO</h2> 
-        </div>
+            <h2 class="title_h2">AREAS DE TRABAJO</h2> 
+        </div> <!-- Titular -->
         
-        <section> <!-- Seccion de servicios en particular -->
+        <section> <!-- Seccion de servicios en particular - Grid de contenido -->
             
-            <div class="section_areas" data-aos="fade-right"> 
-                <div class="section__area">   
+            <div class="section_areas">  <!-- Con bloque div "encapsulo" de a tres iconos por bloque o fila de Grid -->
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000">   
                     <img src="../image/servicios/generacion.svg" alt="icono1">
                     <h3>Proyectos de Generacion</h3><p>Desarrollo integral de proyectos de Generación Solar Fotovoltaicos y Térmicos.</p>
                 </div>
                 
-                <div class="section__area"> 
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000"> 
                     <img src="../image/servicios/escala.svg" alt="icono2">
                     <h3>Sin limitaciones</h3><p>Proyectos a escala Residencial, Comercial e Industrial</p>
                 </div> 
                 
-                <div class="section__area"> 
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000"> 
                     <img src="../image/servicios/diseno.svg" alt="icono3">
                     <h3>Diseño a medida</h3><p>Diseño de Estructuras soporte para cada necesidad. Estructuras Fijas, con ajuste estacional, Trackers con seguimiento en uno o dos ejes</p>
                 </div>
             </div>
             
-            <div class="section_areas" data-aos="fade-left"> 
+            <div class="section_areas"> 
              
-                <div class="section__area">    <!-- Con bloque div "encapsulo" de a tres iconos por bloque o fila -->
+                <div class="section__area" data-aos="fade-left" data-aos-duration="2000">    
                     <img src="../image/servicios/seguimiento.svg" alt="icono10">
                     <h3>Operacion y Manteniemiento</h3><p>Contratos de operacion y mantenimiento. Estudios, ensayos y mediciones</p>
                 </div>
                 
-                <div class="section__area"> 
+                <div class="section__area" data-aos="fade-left" data-aos-duration="2000"> 
                     <img src="../image/servicios/ingenieria.svg" alt="icono8">
                     <h3>Confeccion de Proyectos Ejecutivos</h3><p>Ingenieria Basica e Ingenieria de Detalle para cada proyecto.</p>
                 </div>
                 
-                <div class="section__area"> 
+                <div class="section__area" data-aos="fade-left" data-aos-duration="2000"> 
                     <img src="../image/servicios/obra.svg" alt="icono9">
                     <h3>Obras</h3><p>Equipo tecnico para supervision, inspeccion y construccion de obras en cualquier escala</p>
                 </div>
             </div>
             
-            <div class="section_areas" data-aos="fade-right"> 
-                <div class="section__area">    <!-- Con bloque div "encapsulo" de a tres iconos por bloque o fila -->
+            <div class="section_areas"> 
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000">    
                     <img src="../image/servicios/modelado.png" alt="icono7">
                     <h3>Modelado y Simulacion</h3><p>Analisis de Prefactibilidad a traves de modelos y software de Simulacion.</p>
                 </div>
                 
-                <div class="section__area">
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000">
                     <img src="../image/servicios/bombeo.png" alt="icono5">
                     <h3>Proyectos de Bombeo Solar para acuiferos</h3><p>Diseño y provision de soluciones para bombeo de agua en aplicaciones agricolas.</p>
                 </div>
                 
-                <div class="section__area">
+                <div class="section__area" data-aos="fade-right" data-aos-duration="2000">
                     <img src="../image/servicios/termica.svg" alt="icono6">
                     <h3>Proyectos de Energia Solar Termica</h3><p>Soluciones para calentamiento de agua y calefaccion a partir de energia solar.</p>
                 </div>  
@@ -115,7 +116,7 @@
 
         </section>
      
-        
+     <!-- Incio Footer -->   
         <footer class="footer">
                     
             <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
@@ -128,13 +129,14 @@
                     <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="../image//footer/facebook.png" alt="logo_facebook"></a></li>
                 </ul>         
             </div>
-
             <div class="footer__author">
                 <p >INGENIERIA Y TECNOLOGIA SAS</p>
                 <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
             </div>
-        </footer>                   
-
+        </footer> 
+        <!-- Fin Footer -->  
+                        
+        <!--Scripts  -->
         <script>
             AOS.init();
         </script>  

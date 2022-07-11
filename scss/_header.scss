@@ -5,15 +5,26 @@
 .header__logo{
     img{
         width:map-get($colores, "tamaño_logo");
-    }
+        @media screen and (max-width: 400px){
+            width: 200px;
+        }
+    }  
 }
 
 .navbar-nav{
     a:hover{
-        transition: 0.3s;
+
+    box-shadow: inset 0px 0px 10px map-get($colores, "orange-ingetec");
+    border-radius: 20px;
+    outline-color: black;
+    outline-offset: 200px;
+    
+     
+
+        /* transition: 0.1s;
         border-bottom-color:map-get($colores, "orange-ingetec");
         border-bottom-style:solid;
-        border-width: 3px; 
+        border-width: 3px;  */
     }
 }
 

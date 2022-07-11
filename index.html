@@ -11,8 +11,9 @@
       <meta name="description" content="Empresa lider de la region en el desarrollo de Proyectos de Energia Renovable"/>
       <meta name="author" content="Ing. Juan Manuel Julian" />
       <meta name="copyright" content="INGETEC SAN JUAN" />
-      <link rel="stylesheet" href="./css/normalize-8.0.1.css" type="text/css">
+      <!-- <link rel="stylesheet" href="./css/normalize-8.0.1.css" type="text/css"> --> <!-- Se elimina por que lo incluye BS -->
       <link rel="stylesheet" href="./css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"> <!-- Carrousel -->
       <link rel="icon" href="/image/index/fondo.svg">
       <!-- BS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -20,15 +21,16 @@
     </head>
       
     <body>
+      <!-- Inicio Header -->
       <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-xl bg-light">
           <div class="container-fluid">
-            <a class="header__logo" href="/"><img src="./image/header/logo3.png" alt="logo de empresa"></a>
+            <a class="header__logo" href="/index.html"><img src="./image/header/logo3.png" alt="logo de empresa"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
-              <div class="navbar-nav d-flex justify-content-end gap-5">
+              <div class="navbar-nav d-flex justify-content-end gap-5 container-sm">
                 <a class="nav-link active text-dark text-center" aria-current="page" href="./index.html">INICIO</a>
                 <a class="nav-link text-dark text-center" href="./html/nosotros.html">NOSOTROS</a>
                 <a class="nav-link text-dark text-center" href="./html/servicios.html">SERVICIOS</a>
@@ -39,41 +41,72 @@
           </div>
         </nav>
       </header> <!-- header y nav con BS -->
+      <!-- Fin Header -->
 
       <section class="section_slide">
           <video src="./video/legislatura.mp4" autoplay loop onloadstart="this.muted=true"></video>
-      </section>   
+      </section>  <!-- Video principal de Index -->
       
       <section>
           <h1 class="title_h1">NUESTROS SOCIOS COMERCIALES</h1>
-      </section>
+      </section> <!-- Titular -->
 
-      <div class="container-fluid"> <!-- Grid BS - Dos filas y dos columnas -->
-            <div class="row text-center">
-              <div class="col">
-                <a href="https://www.canadiansolar.com/"> <img src="./image/index/canadian.jpg" alt="logo canadiansolar"></a>
-              </div>
-              <div class="col">
-                <a href="https://www.growatt.mx/"> <img src="./image/index/growatt.jpg" alt="logo growatt" ></a>
-              </div>
-              <div class="col">
-                <a href="https://solar.huawei.com/es/"> <img src="./image/index/huawei.jpg" alt="logo huawei"></a>
-              </div>
-            </div> <!-- Fila 1 -->
+      <div class="carousel"> <!-- Carousel con socios estrategicos -->
+        <div class="carousel__contenedor">
+          <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+  
+          <div class="carousel__lista">
             
-            <div class="row text-center">
-              <div class="col">
-                <a href="https://www.trinasolar.com/es"> <img src="./image/index/trina.jpg" alt="logo trina"></a>
-              </div>
-              <div class="col align-self-center">
-                <a href="https://www.jinkosolar.com/en/site/tigerpro"> <img src="./image/index/jinko.jpg" alt="logo jinko"></a>
-              </div>
-              <div class="col align-self-end">
-                <a href="https://www.sma-south-america.com/"> <img src="./image/index/sma.jpg" alt="logo sma"></a>
-              </div>
-            </div><!-- Fila 2 -->
-      </div>
+            <div class="carousel__elemento">
+              <a href="https://www.canadiansolar.com/"> <img src="/image/index/canadian.jpg" alt="canadian_solar"></a>
+            </div>
 
+            <div class="carousel__elemento">
+              <a href="https://www.jinkosolar.com/en/#index4"><img src="/image/index/jinko.jpg" alt="jinko_solar"></a>
+            </div> 
+
+            <div class="carousel__elemento">
+              <a href="https://solar.huawei.com/es/"><img src="/image/index/huawei.jpg" alt="huawei"></a> 
+            </div>
+
+            <div class="carousel__elemento">
+              <a href="https://www.trinasolar.com/es"> <img src="/image/index/trina.jpg" alt="trina_solar"></a>
+            </div>
+    
+            <div class="carousel__elemento">
+              <a href="https://www.sma.de/es/"><img src="/image/index/sma.jpg" alt="sma_solar"></a>
+            </div>
+            <div class="carousel__elemento">
+              <a href="https://www.canadiansolar.com/"> <img src="/image/index/canadian.jpg" alt="canadian_solar"></a>
+            </div>
+
+            <div class="carousel__elemento">
+              <a href="https://www.jinkosolar.com/en/#index4"><img src="/image/index/jinko.jpg" alt="jinko_solar"></a>
+            </div> 
+
+            <div class="carousel__elemento">
+              <a href="https://solar.huawei.com/es/"><img src="/image/index/huawei.jpg" alt="huawei"></a> 
+            </div>
+
+            <div class="carousel__elemento">
+              <a href="https://www.trinasolar.com/es"> <img src="/image/index/trina.jpg" alt="trina_solar"></a>
+            </div>
+    
+            <div class="carousel__elemento">
+              <a href="https://www.sma.de/es/"><img src="/image/index/sma.jpg" alt="sma_solar"></a>
+            </div>
+          </div>
+  
+          <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+  
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+      <!-- Inicio Footer -->
       <footer class="footer">
         
         <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
@@ -83,14 +116,23 @@
             <li><a href="https://www.youtube.com/channel/UCRcL6cd8WdHlhfdCJOx_3Bw"><img src="./image/footer/youtube.png" alt="icono youtube"></a></li>
             <li><a href="https://www.instagram.com/ingetec.ingenieria/"><img src="./image//footer/instagram.png" alt="logo instagram"></a></li>
             <li><a href="https://www.facebook.com/ingetec.ingenieria.14/"><img src="./image//footer/facebook.png" alt="logo facebook"></a></li>
-        </ul>        
+        </ul>    <!-- lista para iconos e hipervinculo a redes sociales -->    
         
         <div class="footer__author">
             <p >INGENIERIA Y TECNOLOGIA SAS</p>
             <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
         </div>
       </footer>
+      <!-- Fin Footer -->
+       
+      <!-- Scripts -->
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <!-- glider js  - Carrousel -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="./js/glider.js"> </script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
     </body>
 </html>

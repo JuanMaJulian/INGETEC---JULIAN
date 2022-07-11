@@ -8,53 +8,54 @@
     <meta name="description" content="Empresa lider de la region en el desarrollo de Proyectos de Energia Renovable"/>
     <link rel="stylesheet" href="../css/normalize-8.0.1.css" type="text/css">
     <link rel="stylesheet" href="../css/styles.css" type="text/css"> <!-- Linkeo  a .css  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- Animaciones -->
+    <link rel="stylesheet" type="text/css" href="glider.css"> <!-- carrousel con glider.js -->
     <link rel="icon" href="../image/index/fondo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- BS -->
     <title>PROYECTOS</title>
 </head>
 <body>
-    
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-          <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
-              <div class="navbar-nav d-flex justify-content-end gap-5">
-              
-                  <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
-                  <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
-                  <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
-                  <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
-                  <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
-              </div>
-          </div>
-      </div>
+    <!-- Incio Header -->
+    <header> <!-- Header con BS -->
+      <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <a class="header__logo" href="/"><img src="../image/header/logo3.png" alt="logo_de_empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row align-items-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex justify-content-end gap-5 container-sm">
+                    <a class="nav-link active text-dark text-center" aria-current="page" href="../index.html">INICIO</a>
+                    <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+                    <a class="nav-link text-dark text-center" href="./servicios.html">SERVICIOS</a>
+                    <a class="nav-link text-dark text-center" href="./proyectos.html">PROYECTOS</a>
+                    <a class="nav-link text-dark text-center" href="./contacto.html">CONTACTO</a>  
+                </div>
+            </div>
+        </div>
       </nav>
-    </header> <!-- header y nav con BS -->
+    </header> 
+    <!-- Fin Header -->
        
     <main>
         <section class="section_proyectos animate__animated animate__slideInRight">
             <h1 class="title_h1">NUESTRA EXPERIENCIA</h1>
                 <p>
-                    Durante los ultimos años INGETEC ha acumulado bastas experiencias en el desarollo de asesoramientos, consultorias y tambien ejecucion de obras en proyectos de escala Residencial, Comercial e Industrial.
+                    Durante los ultimos años INGETEC ha acumulado bastas experiencias en asesoramientos, consultorias y tambien ejecucion de obras en proyectos de escala Residencial, Comercial e Industrial.
                     Los fuertes incentivos, creditos y campañas en favor de mitigar el impacto sobre el medio ambiente de actividades antropicas marcan un fuerte impulso en la implementacion de tecnologias para la generacion de energias renovables. 
-                    INGETEC como empresa especializada en Energia Solar Fotovoltaica y Termica, se encuentra posicionada como una de las empresas regionales de mayor experiencia y reconocimiento.  
+                    INGETEC como empresa especializada en Energia Solar Fotovoltaica y Termica, se encuentra posicionada como una de las empresas regionales con mayor experiencia y respaldo.  
                 </p>
             <div> 
                 <video src="../video/techos.mp4" autoplay loop  onloadstart="this.muted=true"></video>
             </div>
-        </section>
+        </section> <!-- Seccion Principal con descripcion de experiencias y proyectos -->
         
         <section class="section_hitos">
 
             <div class="section__tarjeta animate__animated animate__backInLeft">
-                <p>+ 50 PROYECTOS EJECUTADOS</p>
+                <p>+ 50 PROYECTOS</p>
             </div>
 
             <div class="section__tarjeta animate__animated animate__backInUp">
@@ -65,11 +66,12 @@
                 <p>+3M tn de C02 EVITADOS</p>
             </div>
 
-        </section>
+        </section> <!-- Tarjetas con hitos -->
 
-        <div><h2 class="title_h2">NUESTROS PROYECTOS</h2></div> <!-- BS -->
+        <div><h2 class="title_h2">NUESTROS PROYECTOS</h2></div> <!-- Titulo de seccion multimedia de proyectos -->
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <!-- Carousel BS -->  
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"> 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,32 +79,32 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../image/proyectos/portho.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-item active ">
+                <img src="../image/proyectos/portho.jpeg" class="d-block w-100" alt="proyecto_comercial">
                 <div class="carousel-caption d-none d-md-block bg-dark">
                   <h5>Proyecto Portho Gelatto 20KW - Comercial</h5>
-                  <p>Instalacion de sistema On Grid para reducir costos en energia empleada en produccion y refrigeracion de helados artesanales de primera calidad <br> El sistema cuenta con 48 Paneles JINKO SOLAR, Monocristalinos de 465Wp de potencia. <br> Se instala Inversor DC/AC On Grid de 20KWac, provisto por el fabricante Growatt. <br> El montaje se realiza en forma coplanar al techo, de acuerdo a restricciones impuestas por la estrucutra edilicia</p>
+                  <p>Instalacion de sistema On Grid para reducir costos en energia empleada en produccion y refrigeracion de helados artesanales de primera calidad </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../image/proyectos/terluk.jpeg" class="d-block w-100" alt="...">
+                <img src="../image/proyectos/terluk.jpeg" class="d-block w-100 " alt="proyecto_residencial">
                 <div class="carousel-caption d-none d-md-block bg-dark">
                   <h5>Proyecto Familia Terluk 10KW - Residencial</h5>
-                  <p>Instalacion de sistema On Grid Residencial para reducir costos en energia de una familia tipo, al mismo tiempo que se generan ingresos pasivos por la comercializacion de exedentes de energia. <br>Fueron instalados 27 Paneles JINKO SOLAR monocristalinos de 400Wp vinculados a Inversor DC/AC Growatt. <br> La instalacion se complemente con un multimedidor inteligente que le permite al propietario un registro total de su consumo y generacion.</p>
+                  <p>Instalacion de sistema On Grid Residencial para reducir costos en energia de una familia tipo </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../image/proyectos/freddy.jpg" class="d-block w-100" alt="...">
+                <img src="../image/proyectos/freddy.jpg" class="d-block w-100" alt="proyecto_comercial">
                 <div class="carousel-caption d-none d-md-block bg-dark">
                   <h5>Proyecto Freddy SRL 10KW - Comercial</h5>
-                  <p>Instalacion de sistema On Grid para un cliente abocado al equipamiento de camiones y movilidades para la alta montaña y mineria. Actualmente se encuentra trabajando en la certificacion de Normas ISO 14001 de gestion ambiental, por lo que se incoporò una fuente de energia renovable para su actividad comercial, ratificando su compromiso con el medio ambiente. <br> La instalacion cuenta de 28 Paneles AMERISOLAR vinculados a dos inversores SMA de 5KWac Trifasicos. El montaje se realiza en zona de techos de galpones.</p>
+                  <p>Instalacion de sistema On Grid para un cliente abocado al equipamiento de camiones y movilidades para la alta montaña</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../image/proyectos/helios.png" class="d-block w-100" alt="...">
+                <img src="../image/proyectos/EPSE.jpg" class="d-block w-100 " alt="proyecto_utility">
                 <div class="carousel-caption d-none d-md-block bg-dark">
-                  <h5>Proyecto Helios Santa Rosa 6MW Mendoza</h5>
-                  <p>INGETEC durante 2020/2021 tuvo a su cargo el desarrollo de la ingenieria basica, ingenieria de detalle e inspeccion de obra para la construccion del Parque Solar Helios Santa Rosa, propiedad de la Compañia Tassaroli, ubicado en Santa Rosa, Mendoza. Este es el primer parque solar de Latinoamerica en implementar Paneles Solares Bifaciales, capaces de generar energia por ambas caras</p>
+                  <h5>Proyecto EPSE SAN JUAN</h5>
+                  <p>Desarrollo de Parque Solar en techos de Edificio Publico de EPSE - Gobierno de San Juan</p>
                 </div>
               </div>
             </div>
@@ -114,9 +116,10 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-    
-    
+          </div> 
+          <!-- FIN Carousel BS -->
+        
+        <!-- Inicio Footer -->
         <footer class="footer">
          <p>CONTACTANOS A TRAVES DE NUESTRAS REDES</p> 
           <div> 
@@ -132,11 +135,15 @@
               <p >INGENIERIA Y TECNOLOGIA SAS</p>
               <p><strong>Juan M. Julian - Todos los derechos reservados 2022</strong></p>
           </div>
-        </footer>       
-    
+        </footer> 
+        <!-- Fin Footer -->      
+        <!-- Scripts -->
         <script>
             AOS.init();
         </script> 
+        <!-- Bs -->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
+         
 </body>
 </html>

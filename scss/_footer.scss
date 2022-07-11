@@ -1,12 +1,14 @@
 //estilo para footer
 @import 'variables';
 
+
+
 .footer{
+
     display: grid;
     color: white;
-    grid-template-rows:0.25fr 1fr 1fr; /* se emplea grid para bloques de footer */
+    grid-template-rows:0.25fr 0.25fr 0.25fr;  
     background-color: black;
-    
     border-bottom-width: 5px;
     border-top-color:map-get($colores, "orange-ingetec");
     border-top-style:solid;
@@ -16,61 +18,40 @@
         flex-direction: row;
         flex-wrap:nowrap;
         justify-content:center;
+        
 
         li {
             margin: 20px;
             max-height:min-content;
 
             &:hover{
-                transition: 0.1s;
-                border-bottom-width: 2px;
-                border-bottom-color:white;
-                border-bottom-style:solid;
+                transition: 0.5s;
                 animation: tiembla 1s infinite;
-             }
+            }
 
             img{
-                width: 60px; 
-                @media screen and (max-width: 400px){
-                    width: 35px;
+                width: 40px; 
+                @media screen and (max-width: 540px){
+                    width: 15px;
                 }
-                @media screen and (max-width: 1000px){
-                    width: 40px;
+                @media screen and (max-width: 1140px){
+                    width: 25px;
     
                 }
             
             }
         }
-
-        p{
+   
+    }
+    p{
     
-            @extend .footer__author;
-    
-        } 
-    }/* Segundo bloque de grid contiene los iconos que se ordenan con flexbox */
+        @extend .footer__author;
+    } 
 
     p{
         text-align: center;
     }
-}
-
-.footer__author{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    p{
-        background-color: black;
-        color: white;
-        font-size: 15px;
-        padding-bottom: 5px;
-        text-align: center;
-            @media screen and (max-width: 400px){
-                font-size: 10px;  
-            }
-            @media screen and (max-width: 1000px){
-                font-size: 10px;
-            }
-    }
+    
 }
 
 
@@ -80,5 +61,23 @@
     100%{ transform:rotateZ( 5deg); }
 } /* Animacion de temblor */
    
+.footer__author{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    p{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        padding-bottom: 2px;
+        text-align: center;
+            @media screen and (max-width: 400px){
+                font-size: 5px;  
+            }
+            @media screen and (max-width: 1000px){
+                font-size: 10px;
+            }
 
+    }
+}
 
